@@ -3,14 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { AngularSplitModule } from 'angular-split';
+import { AngSplitComponent } from './ang-split/ang-split.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AngSplitComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularSplitModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
